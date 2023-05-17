@@ -146,7 +146,7 @@ buscarCiudad = () => {
 
             <div class = "col-lg-12 p-5">
            
-            <img class = "m-auto img-fluid col-lg-12  rounded border border-warning" src="${mapa}" alt="Mapa">
+            <img class = "m-auto img-fluid col-lg-12 col-s-12  rounded border border-warning" src="${mapa}" alt="Mapa">
           
             </div>
 
