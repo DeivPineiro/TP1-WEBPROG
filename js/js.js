@@ -144,9 +144,9 @@ buscarCiudad = () => {
           
             </div>
 
-            <div class = "col-lg-12 p-5">
+            <div class = "col-lg-12 p-2 p-lg-5">
            
-            <img class = "m-auto img-fluid col-lg-12 col-s-12  rounded border border-warning" src="${mapa}" alt="Mapa">
+            <img class = "m-auto img-fluid rounded border border-warning" src="${mapa}" alt="Mapa">
           
             </div>
 
@@ -171,12 +171,12 @@ buscarCiudad = () => {
         })
 
 
-}
+} 
 
 //MUESTRO LOCALSTORAGE
 
 var uCiudad = localStorage.getItem("Ciudad");
-elementoUCiudad.innerHTML = `<p class = "container p-3 m-auto text-center">Última ciudad visitada: ${uCiudad}. </p>`;
+elementoUCiudad.innerHTML = `<p style = "height: 100%; width: 100%;" class = "p-3 m-auto text-center">Última ciudad visitada: ${uCiudad}. </p>`;
 elementBtnBuscar.addEventListener('click', buscarCiudad);
 
 
