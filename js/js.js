@@ -37,7 +37,7 @@ buscarCiudad = () => {
 
 //LLAMADA API MAPA
 
-            var mapa = `https://api.tomtom.com/map/1/staticimage?key=gfSbuZeImTxGgfOGnqVsj5LzzZEZ7S00&zoom=9&center=${json.coord.lon},${json.coord.lat}&format=jpg&layer=basic&style=main&width=1000&height=200&view=Unified&language=en-GB`;
+            var mapa = `https://api.tomtom.com/map/1/staticimage?key=${MI_API_TOM}&zoom=9&center=${json.coord.lon},${json.coord.lat}&format=jpg&layer=basic&style=main&width=1000&height=200&view=Unified&language=en-GB`;
      
 
 //SWITCH FONDO SEGUN CLIMA            
@@ -175,7 +175,7 @@ buscarCiudad = () => {
 
 //MUESTRO LOCALSTORAGE
 
-var uCiudad = localStorage.getItem("Ciudad");
+var uCiudad = localStorage.getItem("Ciudad") || "Nu busco ninguna ciudad";
 elementoUCiudad.innerHTML = `<p style = "height: 100%; width: 100%;" class = "p-3 m-auto text-center">Última ciudad visitada: ${uCiudad}. </p>`;
 elementBtnBuscar.addEventListener('click', buscarCiudad);
 
